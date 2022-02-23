@@ -1,0 +1,20 @@
+Python Fraction Calculator Plan
+
+-Call program frac.py
+
+-Will be made in python
+
+-This will be a command-line program.
+
+-Will use postscript notation
+--Won't accept any other notation.
+
+-This program will only accept two operands.
+
+-The operands need to be in fraction form
+--The numerator and denominator need to be separated by a forward slash.
+--ex: 1/2
+
+
+
+
