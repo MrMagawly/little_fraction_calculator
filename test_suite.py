@@ -1,7 +1,7 @@
 #! usr/bin/python3
 
 import unittest
-import fractions_handler as fh
+import fraction as fh
 
 class TestFractionExpressions(unittest.TestCase):
     
