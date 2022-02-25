@@ -6,12 +6,11 @@ import fractions_handler as fh
 class TestFractionExpressions(unittest.TestCase):
     
     def test_addition(self):
-        actual = fh.add(1, 2, 1, 3)
-        expected = (5, 6)
+        a = fh(1, 2)
+        b = fh(1, 3)
+        actual = a + b
+        expected = fh(5, 6)
         self.assertEqual(actual, expected, 'Expected sum of two fractions.')
-        actual = fh.add(1, 2, 1, 2)
-        expected = (2, 2)
-        self.assertEqual(actual, expected, 'Expected sum of two fractions.')
-        actual = fh.add(1, 3, 2, 2)
-        expected = (8, 6)
-        self.assertEqual(actual, expected, 'Expected sum of two fractions.')
+        actual = a + a
+        expected = 1
+        self.assertEqual(actual.reduce(), expected, 'Expected reduced form of fraction.')
