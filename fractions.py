@@ -10,7 +10,7 @@ class fraction():
     def __sub__(self, fr):
         return fraction(self.n * fr.d - fr.n * self.d, self.d * fr.d)
     
-    def __mult__(self. fr):
+    def __mult__(self, fr):
         return fraction(self.n * fr.d, self.d * fr.n)
 
     def __repr__(self):
