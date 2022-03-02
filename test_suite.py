@@ -12,11 +12,11 @@ class TestFractionExpressions(unittest.TestCase):
         expected = fh(5, 6)
         self.assertEqual(str(actual), str(expected), 'Expected sum of two fractions.')
         actual = a + a
-        expected = 1
-        self.assertEqual(str(actual.reduce()), str(expected), 'Expected reduced form of fraction.')
+        expected = fh(1, 1)
+        self.assertEqual(str(actual), str(expected), 'Expected reduced form of fraction.')
     
     def test_subtraction(self):
-    	a = fh(1, 2)
+        a = fh(1, 2)
         b = fh(1, 3)
         actual = a - b
         expected = fh(1, 6)
