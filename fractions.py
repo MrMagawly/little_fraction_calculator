@@ -18,5 +18,17 @@ class fraction():
     
     #Reduces the numerator and denominator to their simplest numbers.
     def reduce(self):
-        pass
+        n = self.n
+        d = self.d
+        gap = min(max(n, d) - min(n, d), n, d)
+        if gap == 0:
+            n = 1
+            d = 1
+        else:
+            for i in range(gap, 1):
+                if n % gap == 0 and d % gap == 0:
+                    n /= gap
+                    d /= gap
+        self.n = n
+        self.d = d
 
