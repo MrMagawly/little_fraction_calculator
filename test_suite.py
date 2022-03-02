@@ -20,7 +20,7 @@ class TestFractionExpressions(unittest.TestCase):
         b = fh(1, 3)
         actual = a - b
         expected = fh(1, 6)
-        self.assertEqual(str(actual), str(expected), 'Expected sum of two fractions.')
+        self.assertEqual(str(actual), str(expected), 'Expected difference of two fractions.')
     
     def test_multiplication(self):
         a = fh(1, 2)
