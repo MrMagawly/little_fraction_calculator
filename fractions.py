@@ -11,7 +11,7 @@ class fraction():
         return fraction(self.n * fr.d - fr.n * self.d, self.d * fr.d)
     
     def __mul__(self, fr):
-        return fraction(self.n * fr.d, self.d * fr.n)
+        return fraction(self.n * fr.n, self.d * fr.d)
 
     def __repr__(self):
         return 'fraction({0}, {1})'.format(self.n, self.d)
