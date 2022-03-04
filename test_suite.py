@@ -32,6 +32,6 @@ class TestFractionExpressions(unittest.TestCase):
     def test_division(self):
         a = fh(1, 2)
         b = fh(1, 3)
-        actual = a * b
+        actual = a / b
         expected = fh(3, 2)
         self.assertEqual(str(actual), str(expected), 'Expected product of two fractions.')
