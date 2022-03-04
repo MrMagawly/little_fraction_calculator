@@ -7,6 +7,9 @@ class fraction():
     def __add__(self, fr):
         return fraction(self.n * fr.d + fr.n * self.d, self.d * fr.d)
     
+    def __div__(self, fr):
+        return fraction(self.n * fr.d, self.d * fr.n)
+    
     def __sub__(self, fr):
         return fraction(self.n * fr.d - fr.n * self.d, self.d * fr.d)
     
