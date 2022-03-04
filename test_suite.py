@@ -26,5 +26,5 @@ class TestFractionExpressions(unittest.TestCase):
         a = fh(1, 2)
         b = fh(1, 3)
         actual = a * b
-        expected = fh(3, 2)
+        expected = fh(1, 6)
         self.assertEqual(str(actual), str(expected), 'Expected product of two fractions.')
