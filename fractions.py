@@ -24,8 +24,14 @@ class fraction():
     
     #Reduces the numerator and denominator to their simplest numbers.
     def reduce(self):
-        n = self.n
-        d = self.d
+        neg = False
+        
+        if (self.n < 0) ^ (self.d < 0):
+            neg = True
+            
+        n = abs(self.n)
+        d = abs(self.d)
+        
         gap = min(max(n, d) - min(n, d), n, d)
         if gap == 0:
             n = 1
@@ -35,6 +41,10 @@ class fraction():
                 if n % gap == 0 and d % gap == 0:
                     n /= gap
                     d /= gap
+        
+        if neg:
+            n = -n
+        
         self.n = n
         self.d = d
 
