@@ -21,7 +21,8 @@ class fraction():
 
     def __repr__(self):
         return 'fraction({0}, {1})'.format(self.n, self.d)
-
+    
+    #TODO: Make this show a whole number when the numerator and denominator are equal.
     def __str__(self):
         return '{0}/{1}'.format(self.n, self.d)
     
