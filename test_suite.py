@@ -35,3 +35,9 @@ class TestFractionExpressions(unittest.TestCase):
         actual = a / b
         expected = fh(3, 2)
         self.assertEqual(str(actual), str(expected), 'Expected product of two fractions.')
+    
+    def test_exponent(self):
+        a = fh(1, 2)
+        actual = a ** 2
+        expected = fh(1, 4)
+        self.assertEqual(str(actual), str(expected), 'Expected a fraction raised to a power.')
