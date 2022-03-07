@@ -27,7 +27,7 @@ class fraction():
             return '{}'.format('1')
         return '{0}/{1}'.format(self.n, self.d)
     
-    #Reduces the numerator and denominator to their simplest numbers.
+    #Reduces the fraction to its simplest form.
     def reduce(self):
         neg = False
         
