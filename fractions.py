@@ -24,6 +24,8 @@ class fraction():
     
     #TODO: Make this show a whole number when the numerator and denominator are equal.
     def __str__(self):
+        if self.n == self.d:
+            return '{}'.format(self.n)
         return '{0}/{1}'.format(self.n, self.d)
     
     #Reduces the numerator and denominator to their simplest numbers.
