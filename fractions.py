@@ -27,6 +27,12 @@ class fraction():
             return '{}'.format('1')
         return '{0}/{1}'.format(self.n, self.d)
     
+    # Returns True if one of the numerator or denominator are negative, but not both.
+    def is_negative(self):
+        if (self.n < 0) ^ (self.d < 0):
+            neg = True
+        return False
+    
     #Reduces the fraction to its simplest form.
     def reduce(self):
         neg = False
