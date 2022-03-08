@@ -30,16 +30,11 @@ class fraction():
     # Returns True if one of the numerator or denominator are negative, but not both.
     def is_negative(self):
         if (self.n < 0) ^ (self.d < 0):
-            neg = True
+            return True
         return False
     
     #Reduces the fraction to its simplest form.
     def reduce(self):
-        neg = False
-        
-        if (self.n < 0) ^ (self.d < 0):
-            neg = True
-            
         n = abs(self.n)
         d = abs(self.d)
         
@@ -53,7 +48,7 @@ class fraction():
                     n /= gap
                     d /= gap
         
-        if neg:
+        if self.is_negative():
             n = -n
         
         self.n = n
