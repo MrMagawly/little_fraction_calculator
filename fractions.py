@@ -1,5 +1,5 @@
 class fraction():
-    def __init__(self,n,d):
+    def __init__(self,n,d=1):
         self.n = n
         self.d = d
         self.reduce()
