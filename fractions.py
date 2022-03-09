@@ -25,6 +25,8 @@ class fraction():
     def __str__(self):
         if self.n == self.d:
             return '{}'.format('1')
+        elif self.d == 1:
+            return '{}'.format(self.n)
         return '{0}/{1}'.format(self.n, self.d)
     
     # Returns True if one of the numerator or denominator are negative, but not both.
