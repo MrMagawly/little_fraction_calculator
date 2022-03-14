@@ -18,6 +18,9 @@ class fraction():
     
     def __pow__(self, p):#TODO: Make this handle fractions as power value.
         return fraction(pow(self.n, p), pow(self.d, p))
+    
+    def __eq__(self, fr):
+        return True if ((self.n==fr.n) and (self.d==fr.d)) else False 
 
     def __repr__(self):
         return 'fraction({0}, {1})'.format(self.n, self.d)
