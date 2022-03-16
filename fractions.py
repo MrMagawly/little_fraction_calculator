@@ -48,7 +48,7 @@ class fraction():
             n = 1
             d = 1
         else:
-            for i in range(gap, 1):
+            for i in range(gap, 1, -1):
                 if n % gap == 0 and d % gap == 0:
                     n /= gap
                     d /= gap
