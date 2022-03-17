@@ -50,8 +50,8 @@ class fraction():
         else:
             for i in range(gap, 1, -1):
                 if n % gap == 0 and d % gap == 0:
-                    n /= gap
-                    d /= gap
+                    n //= gap
+                    d //= gap
         
         if self.is_negative():
             n = -n
