@@ -41,3 +41,14 @@ class TestFractionExpressions(unittest.TestCase):
         actual = a ** 2
         expected = fh(1, 4)
         self.assertEqual(str(actual), str(expected), 'Expected a fraction raised to a power.')
+    
+    def test_equality(self):
+        a = fh(1, 2)
+        b = fh(2, 4)
+        actual = (a == b)
+        expected = True
+        self.assertEqual(actual, expected, 'Expected boolean value.')
+        c = fh(2, 3)
+        actual = (a == c)
+        expected = False
+        self.assertEqual(actual, expected, 'Expected boolean value to be False.')
