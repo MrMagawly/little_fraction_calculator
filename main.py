@@ -1,8 +1,16 @@
-#! usr/bin/python3
+#!/usr/bin/python3
 
 from fractions import fraction as fh
 
-a = fh(1, 2)
-b = fh(2, 4)
+frac1, frac2, op = tuple(input('Enter expression: ').split())
+
+try:
+    frac1 = tuple(map(int, frac1.split('/')))
+    frac2 = tuple(map(int, frac2.split('/')))
+except TypeError:
+    print('The numerator and denominator need to be integers.')
+
+a = fh(frac1[0], frac1[1])
+b = fh(frac2[0], frac2[1])
 
 print('{0}, {1}'.format(a, b))
